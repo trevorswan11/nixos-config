@@ -29,6 +29,7 @@
     poppler-utils
     imagemagick
     zstd
+    pciutils
   ];
 
   programs = {
