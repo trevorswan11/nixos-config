@@ -117,5 +117,14 @@
   programs.fish.enable = true;
   programs.steam.enable = true;
 
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      openssl
+      stdenv.cc.cc.lib
+      zlib
+    ];
+  };
+
   system.stateVersion = "26.05";
 }
