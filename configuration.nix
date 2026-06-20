@@ -114,8 +114,13 @@
     openrgb-with-all-plugins
     r2modman
     (prismlauncher.override {
-      jdks = [ jdk21 ];
+      jdks = [ jdk25 ];
     })
+    kdePackages.kdenlive
+    ffmpeg
+    vlc
+    obs-studio
+    obsidian
   ];
 
   programs.fish.enable = true;
