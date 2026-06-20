@@ -48,7 +48,6 @@
   };
 
   # Hardware
-  services.hardware.openrgb.enable = true;
   services.asusd.enable = true;
   programs.coolercontrol.enable = true;
 
@@ -111,7 +110,6 @@
     ghostty
     discord
     spotify
-    openrgb-with-all-plugins
     r2modman
     (prismlauncher.override {
       jdks = [ jdk25 ];
