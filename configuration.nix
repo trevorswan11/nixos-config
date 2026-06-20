@@ -112,6 +112,10 @@
     discord
     spotify
     openrgb-with-all-plugins
+    r2modman
+    (prismlauncher.override {
+      jdks = [ jdk21 ];
+    })
   ];
 
   programs.fish.enable = true;
