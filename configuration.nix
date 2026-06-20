@@ -64,9 +64,6 @@
   # Shell
   programs.fish.enable = true;
 
-  # Browser
-  programs.firefox.enable = true;
-
   # User
   users.users.trevorswan = {
     isNormalUser = true;
@@ -77,9 +74,6 @@
       "video"
     ];
     shell = pkgs.fish;
-    packages = with pkgs; [
-      kdePackages.kate
-    ];
   };
 
   # System packages
@@ -88,6 +82,17 @@
     "nix-command"
     "flakes"
   ];
+
+  xdg.mime = {
+    enable = true;
+    defaultApplications = {
+      "text/html" = "brave-browser.desktop";
+      "text/markdown" = "dev.zed.Zed.desktop";
+      "text/plain" = "dev.zed.Zed.desktop";
+      "x-scheme-handler/http" = "brave-browser.desktop";
+      "x-scheme-handler/https" = "brave-browser.desktop";
+    };
+  };
 
   environment.systemPackages = with pkgs; [
     brave
