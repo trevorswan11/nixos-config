@@ -51,7 +51,6 @@
         cd = "z";
         du = "dust";
         nexus = "TERM=xterm-256color ssh nexus";
-        eecs = "TERM=xterm-256color ssh eecs";
         nd = "nix develop --command fish";
         ndi = "nix develop --impure --command fish";
         rgv = "rg --vimgrep";

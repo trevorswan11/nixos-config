@@ -31,7 +31,7 @@
         inherit system;
         modules = [
           ./configuration.nix
-          ./hardware-configuration.nix
+          /etc/nixos/hardware-configuration.nix
           nixvim.nixosModules.nixvim
           ./nvim.nix
 

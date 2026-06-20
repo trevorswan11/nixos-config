@@ -50,7 +50,8 @@
   # Hardware
   services.hardware.openrgb.enable = true;
   services.asusd.enable = true;
-  
+  programs.coolercontrol.enable = true;
+
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
@@ -73,9 +74,6 @@
       nvidiaBusId = "PCI:1:0:0";
     };
   };
-
-  # Shell
-  programs.fish.enable = true;
 
   # User
   users.users.trevorswan = {
@@ -115,6 +113,9 @@
     spotify
     openrgb-with-all-plugins
   ];
+
+  programs.fish.enable = true;
+  programs.steam.enable = true;
 
   system.stateVersion = "26.05";
 }
